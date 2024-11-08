@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yog's Collective</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1><a href="#">Yog's Collective</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Cart Icon -->
+    <div class="cart-icon">
+        <a href="cart.html"><span id="cart-count">0</span> Items in Cart</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>Find Your Perfect Pair of Sunglasses</h2>
+            <a href="#shop" class="cta-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="shop" class="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product" data-id="1">
+                <img src="image2.jpg" alt="Sunglass 1">
+                <h3>Cool Sunglass 1</h3>
+                <p>₹99.99</p>
+                <button class="btn add-to-cart" data-name="Cool Sunglass 1" data-price="99.99">Add to Cart</button>
+            </div>
+            <div class="product" data-id="2">
+                <img src="image2.jpg" alt="Sunglass 2">
+                <h3>Cool Sunglass 2</h3>
+                <p>₹89.99</p>
+                <button class="btn add-to-cart" data-name="Cool Sunglass 2" data-price="89.99">Add to Cart</button>
+            </div>
+            <div class="product" data-id="3">
+                <img src="image2.jpg" alt="Sunglass 3">
+                <h3>Cool Sunglass 3</h3>
+                <p>₹120.00</p>
+                <button class="btn add-to-cart" data-name="Cool Sunglass 3" data-price="120.00">Add to Cart</button>
+            </div>
+        </div>
+        
+        <a href="products.html" class="cta-btn">View All Products</a>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Founded in 2024, Yog's Collective is dedicated to bringing you stylish, high-quality sunglasses at affordable prices. Whether you're lounging by the pool or cruising down the coast, our sunglasses will keep you looking cool and protected.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Yog's Collective</p>
+            <ul class="social-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="cta-btn">Send Message</button>
+        </form>
+        <div id="form-response"></div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
