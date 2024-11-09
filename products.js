@@ -3,44 +3,44 @@ document.addEventListener('DOMContentLoaded', function () {
     const products = [
         {
             id: 1,
-            name: 'Aviator Sunglasses',
-            price: 50.00,
-            image: 'image2.jpg',
+            name: 'Jimmy Sunnies',
+            price: 250.00,
+            image: 's1.jpeg',
             description: 'Classic aviator sunglasses for a stylish look.',
         },
         {
             id: 2,
-            name: 'Round Sunglasses',
-            price: 45.00,
-            image: 'image2.jpg',
+            name: 'Jimmy Sunnies',
+            price: 250.00,
+            image: 's2.jpeg',
             description: 'Retro round sunglasses for the vintage vibe.',
         },
         {
             id: 3,
-            name: 'Wayfarer Sunglasses',
-            price: 55.00,
-            image: 'image2.jpg',
+            name: 'Jimmy Sunnies',
+            price: 250.00,
+            image: 's3.jpeg',
             description: 'Iconic wayfarer sunglasses for everyday wear.',
         },
         {
             id: 4,
-            name: 'Sports Sunglasses',
-            price: 60.00,
-            image: 'image2.jpg',
+            name: 'Jimmy Sunnies',
+            price: 250.00,
+            image: 's4.jpeg',
             description: 'Perfect sunglasses for outdoor sports and activities.',
         },
         {
             id: 5,
-            name: 'Aviator Sunglasses',
-            price: 50.00,
-            image: 'image2.jpg',
+            name: 'Jimmy Sunnies',
+            price: 250.00,
+            image: 's5.jpeg',
             description: 'Classic aviator sunglasses for a stylish look.',
         },
         {
             id: 6,
-            name: 'Round Sunglasses',
-            price: 45.00,
-            image: 'image2.jpg',
+            name: 'Jimmy Sunnies',
+            price: 250.00,
+            image: 's6.jpeg',
             description: 'Retro round sunglasses for the vintage vibe.',
         },
         {
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <img src="${product.image}" alt="${product.name}" class="product-image">
                 <h3>${product.name}</h3>
                 <p>${product.description}</p>
-                <p class="price">$${product.price.toFixed(2)}</p>
+                <p class="price">${product.price.toFixed(2)}</p>
                 <button class="add-to-cart" data-id="${product.id}">Add to Cart</button>
             `;
             productList.appendChild(productCard);
